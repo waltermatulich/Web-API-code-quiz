@@ -2,3 +2,13 @@
     text-align: right;
 }
 
+.scores {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.start {
+    text-align: center;
+    padding-top: 100px;
+}
