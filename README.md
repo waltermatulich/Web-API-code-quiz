@@ -1,4 +1,5 @@
 # Web-API-code-quiz
+Timed Quiz on Javascript fundamentals!
 Deployed WEB APPLICATION URL: https://waltermatulich.github.io/Web-API-code-quiz/
 
 ACCEPTANCE CRITERIA FOR THIS APPLICATION
