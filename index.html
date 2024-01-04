@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB-API-CODE-QUIZ</title>
-</head>
-<body>
-    <div class="scores"><a href=scores.html>View Highscores!</a></div>
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Quiz</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="scores"><a href="score.html">View Highscores</a></div>
+
     <div class="timer">Time: <span id="time">0</span></div>
 
     <div class="wrapper">
-       <div class="start" id="start-screen">
-           <h1>Coding Quiz Challenge!</h1>
-           <p>
+      <div id="start-screen" class="start">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
             Try to answer the following code-related questions within the time limit.
             Keep in mind that incorrect answers will penalize your score/time by ten seconds!
-            </p>
-            <button id="start-quiz">Start Quiz!</button>
-        </div>
+        </p>
+        <button id="start">Start Quiz</button>
+      </div>
 
-        <script src="./script.js"></script>
-</body>
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <h2>All done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./Q&A.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
